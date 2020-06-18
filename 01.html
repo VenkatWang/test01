@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Wang</title>
+    <style>
+        
+        #xing{
+            width:100px;
+            height:80px;
+            position:relative;
+            border:5px green solid;
+            padding:100px;
+            margin-left:100px;
+        }
+        #text{
+            font-size:30px;
+            width:200px;
+            height:80px;
+            padding:100px;
+            margin-left:80px;
+        }
+
+        #xing:before{
+            content:"";
+            width:50px;
+            height:80px;
+            display:block;
+            position:absolute;
+            left:50%;
+            background:#FF0000;
+            border-radius:25px 25px 0 0;
+
+            transform:rotate(-45deg);
+            transform-origin:0 100%;
+        }
+
+        #xing:after{
+            content:"";
+            width:50px;
+            height:80px;
+            display:block;
+            background:red;
+            transform:rotate(45deg);
+            border-radius:25px 25px 0 0;
+            transform-origin:100% 100%;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="xing"></div>
+    <div id="text">阿拉稀罕你！</div>
+    
+</body>
+</html>
